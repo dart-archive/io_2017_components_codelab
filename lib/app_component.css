@@ -1,7 +1,7 @@
 :host {
-  /* This is equivalent of the 'body' selector of a page. */
+    /* This is equivalent of the 'body' selector of a page. */
 }
 
 .first {
-  color: #2196F3;
+    color: #2196F3;
 }
