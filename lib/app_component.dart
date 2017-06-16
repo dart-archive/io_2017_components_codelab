@@ -13,7 +13,7 @@ import 'package:english_words/english_words.dart';
   selector: 'my-app',
   styleUrls: const ['app_component.css'],
   templateUrl: 'app_component.html',
-  directives: const [CORE_DIRECTIVES, materialDirectives],
+  directives: const [materialDirectives],
   providers: const [materialProviders],
 )
 class AppComponent {
