@@ -3,7 +3,7 @@ description: A web app that uses AngularDart Components
 version: 0.0.1
 
 environment:
-  sdk: '>=1.24.0 <2.0.0'
+  sdk: '>=1.23.0 <2.0.0'
 
 dependencies:
   angular: ^4.0.0
@@ -17,15 +17,9 @@ dev_dependencies:
 
 transformers:
 - angular:
-    entry_points: web/main.dart
-- angular2/transform/reflection_remover:
-    $include: test/**_test.dart
+    entry_points:
+    - web/main.dart
+    - test/**_test.dart
 - test/pub_serve:
     $include: test/**_test.dart
 - dart_to_js_script_rewriter
-
-# Uncomment the following in sdk 1.24+ to make pub serve
-# use dartdevc (webdev.dartlang.org/tools/dartdevc).
-#web:
-#  compiler:
-#    debug: dartdevc
