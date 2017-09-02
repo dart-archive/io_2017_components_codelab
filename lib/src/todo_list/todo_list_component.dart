@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:angular2/angular2.dart';
+import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'todo_list_service.dart';
@@ -36,6 +36,7 @@ class TodoListComponent implements OnInit {
     items.add(newTodo);
     newTodo = '';
   }
+
   String remove(int index) => items.removeAt(index);
   void onReorder(ReorderEvent e) =>
       items.insert(e.destIndex, items.removeAt(e.sourceIndex));
