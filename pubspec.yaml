@@ -1,6 +1,5 @@
 name: startup_namer
 description: A web app that uses AngularDart Components
-version: 0.0.1
 
 environment:
   sdk: '>=1.24.0 <2.0.0'
